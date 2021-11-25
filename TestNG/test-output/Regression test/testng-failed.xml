@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Regression Validity title Test(failed)">
+    <classes>
+      <class name="TestCase2.Dependency">
+        <methods>
+          <include name="fourthtest"/>
+          <include name="setupTest"/>
+          <include name="closeBrowse"/>
+          <include name="launchBrowser"/>
+          <include name="dologin"/>
+          <include name="doregister"/>
+          <include name="closeTest"/>
+        </methods>
+      </class> <!-- TestCase2.Dependency -->
+    </classes>
+  </test> <!-- Regression Validity title Test(failed) -->
+</suite> <!-- Failed suite [Regression test] -->

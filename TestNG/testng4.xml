@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameterization test">
+<parameter name="URL" value="demoqa.com" />
+<parameter name="APIKey/username" value="123456" />
+	<test name="Purify Test">
+		<classes>
+			<class name="parameterization.Parameterization1" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

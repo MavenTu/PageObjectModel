@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="12" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="72" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+    <groups>
+      <group name="regression">
+        <method signature="TestNGgroup.test3()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test3" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestNGgroup.test2()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test2" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNGgroup.test1()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test1" class="GroupsDemo.TestNGgroup"/>
+        <method signature="TestNGgroup.test2()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test2" class="GroupsDemo.TestNGgroup"/>
+        <method signature="TestNGgroup.test3()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test3" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Command line test" duration-ms="72" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+      <class name="Testcase1.BaseTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Testcase1.BaseTest@76b0bfab]" name="setUp" is-config="true" duration-ms="8" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Testcase1.BaseTest@76b0bfab]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcase1.BaseTest -->
+      <class name="listeners.TestNGListeners">
+        <test-method status="FAIL" signature="test1()[pri:0, instance:listeners.TestNGListeners@5a1c0542]" name="test1" duration-ms="2" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at listeners.TestNGListeners.test1(TestNGListeners.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:listeners.TestNGListeners@5a1c0542]" name="test2" duration-ms="0" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="SKIP" signature="test3()[pri:0, instance:listeners.TestNGListeners@5a1c0542]" name="test3" duration-ms="1" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[this is skip excepsion...]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: this is skip excepsion...
+at listeners.TestNGListeners.test3(TestNGListeners.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- listeners.TestNGListeners -->
+      <class name="defualtAlldemoes.NewLogInTest">
+        <test-method status="PASS" signature="testData(java.lang.String,java.lang.String)[pri:0, instance:defualtAlldemoes.NewLogInTest@48503868]" name="testData" duration-ms="0" started-at="2021-11-22T14:05:39 IST" data-provider="dp1" finished-at="2021-11-22T14:05:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[poltu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123465]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="testData(java.lang.String,java.lang.String)[pri:0, instance:defualtAlldemoes.NewLogInTest@48503868]" name="testData" duration-ms="0" started-at="2021-11-22T14:05:39 IST" data-provider="dp1" finished-at="2021-11-22T14:05:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[laltu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+      </class> <!-- defualtAlldemoes.NewLogInTest -->
+      <class name="GroupsDemo.TestNGgroup">
+        <test-method status="PASS" signature="test1()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test1" duration-ms="0" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test2" duration-ms="1" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test3" duration-ms="0" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:GroupsDemo.TestNGgroup@6895a785]" name="test4" duration-ms="0" started-at="2021-11-22T14:05:39 IST" finished-at="2021-11-22T14:05:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- GroupsDemo.TestNGgroup -->
+      <class name="dataProvideParameterization.TestParameterization">
+        <test-method status="PASS" signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:dataProvideParameterization.TestParameterization@1c3a4799]" name="doLogin" duration-ms="1" started-at="2021-11-22T14:05:39 IST" data-provider="getData" finished-at="2021-11-22T14:05:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duttasoham20@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:dataProvideParameterization.TestParameterization@1c3a4799]" name="doLogin" duration-ms="2" started-at="2021-11-22T14:05:39 IST" data-provider="getData" finished-at="2021-11-22T14:05:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duttasoham100@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:dataProvideParameterization.TestParameterization@1c3a4799]" name="doLogin" duration-ms="0" started-at="2021-11-22T14:05:39 IST" data-provider="getData" finished-at="2021-11-22T14:05:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[duttasoham100@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+      </class> <!-- dataProvideParameterization.TestParameterization -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

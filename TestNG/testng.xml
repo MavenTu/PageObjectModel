@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+	<test name="Login Test">
+		<classes>
+			<class name="Testcase1.DemoTestNG" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="basicProgram2 Test">
+		<classes>
+			<class name="Testcase1.basicProgram2" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="basicProgram Test">
+		<classes>
+			<class name="Testcase1.basicProgram" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Dependency Test">
+		<classes>
+			<class name="Testcase1.Dependency" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="SkipCondition Test">
+		<classes>
+			<class name="Testcase1.SkipConditions" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+ 

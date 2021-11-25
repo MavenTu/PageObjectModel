@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-17T11:08:03 IST" name="Default suite" finished-at="2021-11-17T11:08:03 IST" duration-ms="65">
+    <groups>
+      <group name="regression">
+        <method signature="TestNGgroup.test3()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" name="test3" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestNGgroup.test2()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" name="test2" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNGgroup.test1()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" name="test1" class="GroupsDemo.TestNGgroup"/>
+        <method signature="TestNGgroup.test2()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" name="test2" class="GroupsDemo.TestNGgroup"/>
+        <method signature="TestNGgroup.test3()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" name="test3" class="GroupsDemo.TestNGgroup"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2021-11-17T11:08:03 IST" name="Default test" finished-at="2021-11-17T11:08:03 IST" duration-ms="65">
+      <class name="GroupsDemo.TestNGgroup">
+        <test-method signature="test1()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" started-at="2021-11-17T11:08:03 IST" name="test1" finished-at="2021-11-17T11:08:03 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" started-at="2021-11-17T11:08:03 IST" name="test2" finished-at="2021-11-17T11:08:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" started-at="2021-11-17T11:08:03 IST" name="test3" finished-at="2021-11-17T11:08:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:GroupsDemo.TestNGgroup@428640fa]" started-at="2021-11-17T11:08:03 IST" name="test4" finished-at="2021-11-17T11:08:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- GroupsDemo.TestNGgroup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

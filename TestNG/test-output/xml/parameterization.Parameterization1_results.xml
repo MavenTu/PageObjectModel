@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Purify Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.002">
+  <properties />
+  
+  
+            <testcase name="test2" time="0.001" classname="parameterization.Parameterization1" />
+                <testcase name="test1" time="0.000" classname="parameterization.Parameterization1" />
+                <testcase name="test3" time="0.001" classname="parameterization.Parameterization1" />
+                <testcase name="test4" time="0.000" classname="parameterization.Parameterization1" />
+      
+</testsuite>

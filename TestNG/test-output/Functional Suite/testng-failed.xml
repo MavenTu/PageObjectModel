@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="basicProgram2 Test(failed)">
+    <classes>
+      <class name="Testcase1.basicProgram2">
+        <methods>
+          <include name="validatesTitle"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcase1.basicProgram2 -->
+    </classes>
+  </test> <!-- basicProgram2 Test(failed) -->
+  <test thread-count="5" name="Dependency Test(failed)">
+    <classes>
+      <class name="Testcase1.Dependency">
+        <methods>
+          <include name="dologin"/>
+          <include name="launchBrowser"/>
+          <include name="doregister"/>
+          <include name="fourthtest"/>
+          <include name="setupTest"/>
+          <include name="setUp"/>
+          <include name="closeBrowse"/>
+          <include name="closeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcase1.Dependency -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+  <test thread-count="5" name="SkipCondition Test(failed)">
+    <classes>
+      <class name="Testcase1.SkipConditions">
+        <methods>
+          <include name="skipSetup"/>
+        </methods>
+      </class> <!-- Testcase1.SkipConditions -->
+    </classes>
+  </test> <!-- SkipCondition Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->

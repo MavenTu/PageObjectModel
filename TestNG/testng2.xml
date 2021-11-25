@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Group">
+  <test name="Sanity Test">
+ <groups>
+ <run>
+ <include name="smoke"></include>
+ <exclude name="regression"></exclude>
+ </run>
+ </groups>
+    <classes>
+      <class name="GroupsDemo.TestNGgroup"/>
+    </classes>
+  </test> <!-- GroupTest -->
+</suite> <!-- Group -->
