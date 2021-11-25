@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="co.demo.MultipleBrowserPracticeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="Login"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- co.demo.MultipleBrowserPracticeTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
